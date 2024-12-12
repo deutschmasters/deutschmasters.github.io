@@ -1,0 +1,1188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+      opacity: 0; /* Start fully transparent */
+      transform: translateY(50px); /* Start 30px down */
+  }
+  100% {
+      opacity: 1; /* End fully opaque */
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+@keyframes Boom {
+  0% {
+      max-width: 0%;
+      height: auto;
+  }
+  50% {
+    max-width: 29%;
+    height: auto;
+  }
+  100% {
+      max-width: 25%;
+      height: auto;
+  }
+}
+
+@keyframes nav {
+  0% {
+    margin-right: 0;
+    opacity: 0;
+  }
+  100% {
+    margin-right: 35px;
+    opacity: 1;
+  }
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#242424, #656565);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #494949;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+h3 {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+p {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+blockquote {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+pre {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+#First {
+  background: url(/resources/296a59f0-8c8e-465e-8593-b641cb5d300c.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+  z-index: 100;
+  transition: 0.3s;
+}
+
+nav.desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin-right: 35px;
+  font-size: 17px;
+  text-decoration: none;
+  color: rgb(221, 220, 220);
+  font-weight: 500;
+  transition: 0.3s ease;
+  animation: nav 1.5s;
+}
+
+nav a:hover {
+  color: white;
+  transition: 0.3s ease;
+}
+
+.a_icon {
+  padding-right: 5px;
+}
+
+.scrolled {
+  background-color: white; /* Background color after scrolling */
+  transition: 0.3s;
+}
+
+.scrolled .hamburger div {
+  background-color: black;
+}
+
+.scrolled #navbar a {
+  color: black; /* Change link color to black when scrolled */
+}
+
+.scrolled #navbar a:hover {
+  color: rgb(245, 177, 20);;
+}
+
+.scrolled #navbar .Signing {
+  color: white;
+}
+
+.scrolled .Logo {
+  box-shadow: 5px 5px 10px rgba(67, 67, 67, 0.564);
+  transition: 0.3s;
+}
+
+.scrolled #navbar .Signing:hover {
+  background-color: rgb(245, 177, 20);
+  color: white;
+}
+
+.Signing {
+  background-color: black;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.Signing:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: black;
+}
+
+.Logo {
+  width: 80px; /* Set the desired width */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 100px;
+  transition: 0.3s;
+}
+
+.graphic-section {
+  position: relative; /* Enables absolute positioning of child elements */
+  width: 100%;
+  height: 100vh; /* Makes the section cover the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MiseryButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+.Enhanced {
+  position: relative;
+  max-width: 25%;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 5px 10px 15px rgba(67, 67, 67, 0.564),
+              0 20px 30px rgba(0, 0, 0, 0.571);
+  z-index: 1;
+  text-wrap: wrap;
+  margin: 20px;
+  overflow: hidden; /* Keeps pseudo-element inside */
+  animation: Boom 0.5s ease-out forwards; /* Animation lasts 1.5s */
+}
+
+.text-content {
+  position: absolute;
+  text-align: center; /* Centers the text horizontally */
+  z-index: 2; /* Places the text above the image */
+  color: whitesmoke; /* Optional: Set a color that contrasts well with the image */
+  font-family: 'Impact', sans-serif;
+  text-shadow: 5px 10px 15px rgba(67, 67, 67, 0.771);
+}
+
+.text-content h1 {
+  font-size: 50px;
+  font-weight: 200;
+  padding: 20px;
+}
+
+span {
+  font-family: 'Impact', sans-serif;
+}
+
+.span1 {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards; /* Animate with fade-up */
+  animation-delay: 0.5s; /* No delay for the first span */
+}
+
+.span2 {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards; /* Animate with fade-up */
+  animation-delay: 1s; /* Delay the second span by 0.5s */
+}
+
+.text-content h2 {
+  font-size: 20px;
+  max-width: 800px; /* Adjust the max-width to control the line length */
+  margin: 0 auto; /* Centers the h2 within the container */
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.3s;
+}
+
+.text-content button {
+  padding: 10px 30px;
+  border: none;
+  background-color: rgb(244, 186, 38);
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 450;
+  box-shadow: 0 0 20px 2px rgba(244, 186, 38, 0.837);
+  cursor: pointer;
+  transition: 0.6s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.5s;
+}
+
+.text-content button:hover {
+  background-color: rgb(248, 184, 24);
+  box-shadow: 0 0 30px 2px rgb(248, 184, 24);
+  transition: 0.6s ease;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+  transition: 0.3s;
+}
+
+/* Mobile menu */
+nav.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+nav.mobile-nav a {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.hamburger.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#Second {
+  display: flex;
+  justify-content: space-around; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  min-height: 50vh; /* Full viewport height */
+  padding: 20px; /* Optional padding for spacing */
+}
+
+#Third {
+  background-color: #F4BA26;
+  width: 100%;
+  min-height: 170vh;
+}
+
+#Forth {
+  background-color: #ba0e05;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#Fifth {
+  background-color: #1f1f1f;
+  width: 100%;
+  min-height: 120vh;
+}
+
+.bubbly-border {
+  margin-top: 20%;
+}
+
+.bubbly-border img {
+  width: 95%;
+  height: auto;
+  float: left;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+      background-size: 100% 100%;
+  }
+  50% {
+      background-size: 110% 110%;
+  }
+  100% {
+      background-size: 100% 100%;
+  }
+}
+
+.Heading {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-bottom: 350px;
+  text-align: center;
+}
+
+.section-head span {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.section-head {
+    color: #ba0e05;
+    font-size: 80px; /* Adjust size as needed */
+    letter-spacing: 3px;
+    transform: translateX(150%);
+    transform: translateY(-100%);
+    font-weight: 200;
+}
+
+.Feedback_Container {
+  display: flex; /* Use Flexbox */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  height: 100vh; /* Full viewport height for vertical centering */
+  padding: 20px; /* Optional padding */
+  margin-right: 200px;
+}
+
+.box {
+  max-width: 400px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  transition: transform 0.1s ease; /* Smooth transition for the tilt effect */
+  transform-style: preserve-3d; /* Keep 3D transforms */
+  margin: 0; /* Remove default margin */
+  width: 100%; /* Make it responsive */
+}
+
+.box .card {
+  position: relative;
+  background: #ed2950b5;
+  width: 400px;
+  min-height: 480px;
+  backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+  z-index: 1;
+  box-shadow: 0 10px 15px rgba(39, 38, 38, 0.44);
+}
+
+.elements {
+  position: absolute;
+  top: 50px;
+  left: -30px;
+  width: 120px;
+  height: 120px;
+  background: rgba(99, 99, 99, 0.768);
+  transform: translateZ(80px);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  text-align: center;
+  align-content: center;
+  box-shadow: 0 10px 15px rgba(39, 38, 38, 0.44);
+}
+
+.pfp {
+  position: absolute;
+  top: -50px;
+  left: 160px;
+  width: 150px;
+  height: 150px;
+  background: rgba(99, 99, 99, 0.768);
+  transform: translateZ(80px);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  text-align: center;
+  align-content: center;
+  box-shadow: 0 10px 15px rgba(39, 38, 38, 0.44);
+}
+
+.Quote {
+  position: absolute;
+  top: 200px;
+  left: 90px;
+  width: 450px;
+  height: auto;
+  background: rgba(99, 99, 99, 0.768);
+  transform: translateZ(80px);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  align-content: center;
+  box-shadow: 0 10px 15px rgba(39, 38, 38, 0.44);
+  padding: 10px;
+}
+
+.Quote button {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  box-shadow: none;
+  border: none;
+  margin-top: 10px;
+  transition: 0.5s;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+.Quote button a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  padding: 20px;
+  align-items: center;
+}
+
+.Quote button a:hover {
+  color: black;
+  transition: 0.5s;
+}
+
+.Quote button:hover {
+  background-color: whitesmoke;
+  color: black;
+  transition: 0.5s;
+}
+
+.Name {
+  position: absolute;
+  top: 120px;
+  left: 190px;
+  width: 230px;
+  height: 50px;
+  transform: translateZ(80px);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  align-content: center;
+  box-shadow: 0 10px 15px rgba(39, 38, 38, 0.44);
+  padding: 10px;
+  text-align: center;
+  background: rgba(99, 99, 99, 0.768);
+  color: white;
+}
+
+.Name p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Quote p {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+.Quote span {
+  margin-top: 50px;
+}
+
+.pfp img {
+  width: 105px;
+  height: 105px;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+
+.icon {
+  color: white;
+  font-size: 60px;
+}
+
+.Services_Description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-right: 125px;
+  margin-left: 125px;
+}
+
+.Services_Description h1, p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.Services_Description h1 {
+  padding-bottom: 10px;
+  font-size: 30px;
+  line-height: 1.2em
+}
+
+.Services_Description p {
+  font-size: 17px;
+  line-height: 1.3em;
+  text-align: justify;
+}
+
+.Services_Description img {
+  width: 500px;
+  height: auto;
+}
+
+.Card_Collection {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+  margin: 0 auto; /* Center collection on the page */
+  padding: 20px; /* Optional padding for spacing */
+  transform: translateY(-27%);
+}
+
+.Card4 {
+  background-color: #f0f0f0; /* Optional background color for the cards */
+  padding: 15px 30px; /* Adjusted padding for better text fitting */
+  text-align: center;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.264); /* Optional box shadow for better visuals */
+  flex: 0 1 auto; /* Allow flex-basis to adapt to content size */
+  display: inline-block; /* Makes the box only as wide as the content */
+}
+
+
+.Card4 i {
+  font-size: 25px;
+  background-color: white;
+  transform: translateY(-90%);
+  padding: 17px;
+  margin: 0;
+  border-radius: 150%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.122); /* Optional box shadow for better visuals */
+}
+
+.Card4 p {
+  font-size: 17px;
+  margin: -10px 0 0;
+  transform: translateY(-30%);
+}
+
+.Forth_Heading {
+  text-align: center;
+  font-size: 90px;
+  color: white;
+  font-weight: 300;
+  margin: 80px;
+}
+
+.Courses {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+  margin: 0 auto; /* Center collection on the page */
+  padding: 20px; /* Optional padding for spacing */
+
+}
+
+.course-card {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #ffffff;
+  margin: 20px;
+  display: inline-block;
+  text-align: left;
+  box-shadow: 5px 15px 10px rgba(67, 67, 67, 0.564);
+  border: 5px white solid;
+}
+
+.course-button a {
+  text-decoration: none;
+  color: white;
+  padding: 125px;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.course-details {
+  padding: 20px;
+}
+
+.course-title {
+  font-size: 1.4em;
+  margin: 10px 0;
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.course-description {
+  font-size: 1em;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.course-price {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.badge {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 500;
+  border-radius: 10px 10px 0 0;
+}
+
+.course-button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.course-button:hover {
+  background-color: #0056b3;
+}
+
+.Final_Box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Space between cards */
+  margin: 0 auto; /* Center collection on the page */
+  padding: 20px; /* Optional padding for spacing */
+  background-color: whitesmoke;
+  max-width: 1000px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.Final_Card {
+  max-width: 60%;
+  justify-content: center;
+}
+
+.Final_Card p {
+  text-align: justify;
+}
+
+.Final_Card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+
+.Final_Card button:hover {
+  background-color: #F4BA26;
+  transition: 0.5s;
+}
+
+.Final_Card button a {
+  text-decoration: none;
+  color: white;
+  padding: 70px;
+  font-weight: 500;
+}
+
+.Final_Card h1 {
+  padding-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Final_Card p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.Final_Box img {
+  width: 300px;
+  height: 300px;
+}
+
+footer{
+  display: flex;
+  margin-top: auto;
+  background-color: #1f1f1f;
+  padding: 60px 10%;
+  justify-content: center;
+}
+
+ul{
+  list-style: none;
+}
+
+.footer-col{
+  margin-left: 8%;
+  width: 33.3%;
+}
+
+.footer-col h4{
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: gold;
+  height: 2px;
+  width: 40px;
+}
+
+ul li:not(:last-child){
+  margin-bottom: 8px;
+}
+
+ul li a{
+  display: block;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #bdb6b6;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+ul li a:hover{
+  color: white;
+  padding-left: 2px;
+}
+
+.links a{
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  color: white;
+  background-color: #e9b329;
+  margin: 0 8px 8px 0;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+#ContactForm {
+  width: 100%;
+  min-height: 50vh;
+  align-content: center;
+  background-color: #1f1f1f;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+   color: white;
+   margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 30%;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px #242424 solid;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+  height: 100px;
+}
+
+footer p {
+  color: #a8a2a2;
+}
+
+.Form button {
+  width: 200px;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px #242424 solid;
+  font-family: 'Poppins', sans-serif;
+  color: #242424;
+  font-size: 15px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.Form button i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+
+.links a:hover{
+  color: black;
+  background-color: white;
+}
+
+.e {
+  color:#929191;
+  text-align: center;
+}
+
+@media(max-width: 740px){
+  .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+      text-align: center;
+      margin-left: 0%;
+  }
+
+  .footer-col h4::before{
+      all: unset;
+  }
+}
+
+@media(max-width: 555px){
+  .footer-col{
+      width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .course-button a {
+    padding: 55px;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  #Second {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .section-head {
+    transform: translateX(0%);
+    transform: translateY(0%);
+  }
+
+  .Feedback_Container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .box {
+    margin: 0;
+  }
+
+  .box .card {
+    width: 300px;
+    height: 150px;
+    margin-top: 50px;
+  }
+
+  .elements {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  .pfp {
+    left: 34%;
+    top: -10%;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+
+  .pfp img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .Name {
+    font-size: 15px;
+    left: 15%;
+    top: 100px;
+  }
+
+  .Quote {
+    left: 0;
+    max-width: 100%;
+  }
+
+  .Quote p {
+    font-size: 15px;
+  }
+
+  .Services_Description img {
+    width: 0;
+    height: 0;
+    display: none;
+    
+  }
+
+  #Third {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .Services_Description {
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 25%;
+    margin-left: 0%;
+  }
+
+  .Services_Description h1 {
+    font-size: 20px;
+    width: 300px;
+  }
+
+  .Services_Description p {
+    font-size: 15px;
+    width: 300px;
+    text-align: left;
+  }
+
+  .Heading h1 {
+    font-size: 40px;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Heading h1 span {
+    font-size: 15px;
+  }
+
+  .bubbly-border {
+    width: 0;
+    height: 0;
+  }
+
+  .Card_Collection {
+    transform: translateY(-50%);
+    display: none;
+  }
+
+  .Card_Collection p {
+    font-size: 15px;
+  }
+
+  .Card_Collection i {
+    font-size: 20px;
+  }
+
+  #Forth {
+    flex-direction: column;
+  }
+
+  .Final_Card p {
+    text-align: left;
+  }
+
+  .Courses {
+    flex-direction: column;
+  }
+
+  .course-title {
+    font-size: 21px;
+  }
+
+  .course-description {
+    font-size: 15px;
+  }
+
+  .Forth_Heading {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .Final_Box img {
+    width: 100px;
+    height: 100px;
+  }
+
+  nav.desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .Logo {
+    width: 50px; /* Adjust the logo size */
+  }
+
+  /* Show mobile menu when active */
+  nav.mobile-nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav a {
+    font-size: 10px;
+    margin-right: 5px;
+  }
+
+  .Enhanced {
+    margin: 0px;
+  }
+
+  .text-content h1 {
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+
+  .Final_Box {
+    max-width: 1000px;
+  }
+
+  .Final_Card {
+    max-width: 1000px;
+  }
+
+  .Final_Card h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .Final_Card button a {
+    font-size: 13px;
+    padding: 20px;
+  }
+  svg {
+    display: none;
+  }
+
+  .course-card h3 {
+    line-height: 1.2em;
+  }
+
+  input {
+    width: 70%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  footer p {
+    display: none;
+  }
+}
