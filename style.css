@@ -727,7 +727,7 @@ nav.mobile-nav a {
 
 .course-button {
   width: 100%;
-  background-color: #007bff;
+  background-color: #0054B3;
   color: white;
   border: none;
   padding: 12px 0;
@@ -738,7 +738,7 @@ nav.mobile-nav a {
 }
 
 .course-button:hover {
-  background-color: #0056b3;
+  background-color: #242424;
 }
 
 .Final_Box {
