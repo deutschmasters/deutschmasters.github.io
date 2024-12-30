@@ -727,7 +727,7 @@ nav.mobile-nav a {
 
 .course-button {
   width: 100%;
-  background-color: #0054B3;
+  background-color: #0054B3; /* testing */
   color: white;
   border: none;
   padding: 12px 0;
