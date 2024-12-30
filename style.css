@@ -236,7 +236,8 @@ svg {
 
 .Enhanced {
   position: relative;
-  max-width: 25%;
+  width: 750px;
+  height: 750px;
   height: auto;
   border-radius: 50px;
   box-shadow: 5px 10px 15px rgba(67, 67, 67, 0.564),
@@ -286,6 +287,11 @@ span {
   font-weight: 300;
   opacity: 0;
   animation: fadeIn 1s forwards 1.3s;
+}
+
+.review {
+  width: 1520px;
+  height: 1140px;
 }
 
 .text-content button {
@@ -481,6 +487,21 @@ nav.mobile-nav a {
   text-align: center;
   align-content: center;
   box-shadow: 0 10px 15px rgba(39, 38, 38, 0.44);
+}
+
+.graphic1 {
+  width: 1280px;
+  height: 782px;
+}
+
+.graphic2 {
+  width: 1280px;
+  height: 1280px;;
+}
+
+.FinaleImage {
+  width: 600px;
+  height: 600px;
 }
 
 .Quote {
@@ -1079,6 +1100,11 @@ footer p {
 
   .Card_Collection p {
     font-size: 15px;
+  }
+
+  .review {
+    width: 12290px;
+    height: 915px;
   }
 
   .Card_Collection i {
