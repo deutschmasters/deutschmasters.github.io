@@ -382,7 +382,7 @@ nav.mobile-nav a {
 #Fifth {
   background-color: #1f1f1f;
   width: 100%;
-  min-height: 120vh;
+  min-height: 140vh;
 }
 
 .bubbly-border {
@@ -899,8 +899,8 @@ ul li a:hover{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-   color: white;
-   margin-bottom: 20px;
+  color: white;
+  margin-top: 70px;
 }
 
 input, textarea {
@@ -925,7 +925,7 @@ footer p {
   padding: 10px;
   margin: 2px;
   border-radius: 5px;
-  background-color: white;
+  background-color: rgb(237, 235, 235);
   border: 1px #242424 solid;
   font-family: 'Poppins', sans-serif;
   color: #242424;
@@ -934,13 +934,19 @@ footer p {
   display: flex;
   cursor: pointer;
   justify-content: space-between;
+  transition: 0.5s;
+}
+
+.Form button:hover {
+  background-color: white;
+  transition: 0.5s;
+  width: 210px;
 }
 
 .Form button i {
   font-size: 20px;
   padding-right: 10px;
 }
-
 
 .links a:hover{
   color: black;
