@@ -691,12 +691,6 @@ nav.mobile-nav a {
   border: 5px white solid;
 }
 
-.course-button a {
-  text-decoration: none;
-  color: white;
-  padding: 125px;
-}
-
 .course-card:hover {
   transform: translateY(-8px);
 }
@@ -751,11 +745,11 @@ nav.mobile-nav a {
   background-color: #004594; /* testing */
   color: white;
   border: none;
-  padding: 12px 0;
-  font-size: 1em;
+  padding: 12px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 1em;
 }
 
 .course-button:hover {
@@ -981,10 +975,6 @@ footer p {
 
   body {
     overflow-x: hidden;
-  }
-
-  .course-button a {
-    padding: 55px;
   }
 
   section {
