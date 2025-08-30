@@ -215,6 +215,67 @@ nav a:hover {
   transition: 0.3s;
 }
 
+.Material {
+  padding: 70px;
+  text-align: center;
+}
+
+.Material_Head {
+  font-size: 49px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 35px;
+}
+
+.Collection {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+
+.Card_Collect {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 450px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.Card_Collect:hover {
+  transform: translateY(-5px);
+}
+
+.pdf-title {
+  font-size: 18px;
+  line-height: 1.3em;
+  margin: 20px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 11px 50px;
+  background: #0077ff;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.download-btn:hover {
+  background: #005ccc;
+}
+
+
 .graphic-section {
   position: relative; /* Enables absolute positioning of child elements */
   width: 100%;
