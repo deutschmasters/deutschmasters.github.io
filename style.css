@@ -218,11 +218,11 @@ nav a:hover {
 .Material {
   padding: 70px;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .Material_Head {
   font-size: 49px;
-  margin-top: 30px;
   margin-bottom: 20px;
   color: white;
   font-size: 35px;
@@ -233,7 +233,7 @@ nav a:hover {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 70px;
+
 }
 
 .Card_Collect {
@@ -252,7 +252,7 @@ nav a:hover {
 }
 
 .pdf-title {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.3em;
   margin: 20px;
   color: #333;
@@ -262,7 +262,7 @@ nav a:hover {
 .download-btn {
   display: inline-block;
   padding: 11px 50px;
-  background: #0077ff;
+  background: #700905;
   color: #fff;
   font-size: 17px;
   text-decoration: none;
