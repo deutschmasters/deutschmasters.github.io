@@ -806,6 +806,11 @@ nav.mobile-nav a {
   text-shadow: 5px 10px 15px rgba(67, 67, 67, 0.432);
 }
 
+.badge-new2 {
+  background-color: rgb(218, 54, 32);
+  text-shadow: 5px 10px 15px rgba(67, 67, 67, 0.432);
+}
+
 .collect-1 {
   margin-bottom: 30px;
   margin-top: 15px;
