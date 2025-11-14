@@ -477,6 +477,21 @@ nav.mobile-nav a {
   text-align: center;
 }
 
+.translate-btn {
+  background: black;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.translate-btn:hover {
+  background-color: white;
+  color: #1f1f1f;
+}
+
+
 .section-head span {
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
