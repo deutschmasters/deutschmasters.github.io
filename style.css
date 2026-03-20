@@ -424,7 +424,7 @@ nav.mobile-nav a {
     display: flex;
     flex-direction: column; /* This forces the stack */
     align-items: center;    /* Optional: centers them horizontally */
-    height: 135vh;
+    height: 150vh;
   }
 
 .Second_headings {
@@ -587,16 +587,16 @@ nav.mobile-nav a {
 .wrapper {
     display: flex;
     width: calc(250px * 10); /* Example: Image width * total images (including clones) */
-    animation: scroll 20s linear infinite;
+    animation: scroll 40s linear infinite;
 }
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 7)); } /* Stop exactly where the clones start */
+    100% { transform: translateX(calc(-250px * 10)); } /* Stop exactly where the clones start */
 }
 
 .wrapper img {
-    width: 375px; /* Adjust this number to the size you actually want */
+    width: 330px; /* Adjust this number to the size you actually want */
     height: auto;
     flex-shrink: 0; /* Prevents the images from squishing */
     object-fit: cover;
