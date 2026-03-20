@@ -421,11 +421,14 @@ nav.mobile-nav a {
 }
 
 #Second {
-  display: flex;
-  justify-content: space-around; /* Align items to the right */
-  align-items: center; /* Center items vertically */
-  min-height: 50vh; /* Full viewport height */
-  padding: 20px; /* Optional padding for spacing */
+    display: flex;
+    flex-direction: column; /* This forces the stack */
+    align-items: center;    /* Optional: centers them horizontally */
+    height: 135vh;
+  }
+
+.Second_headings {
+  margin: 50px;
 }
 
 #Third {
@@ -549,6 +552,102 @@ nav.mobile-nav a {
   align-content: center;
   box-shadow: 0 10px 15px rgba(39, 38, 38, 0.44);
 }
+
+.reviews_header {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+.reviews_header span {
+  background-color: #700905;
+  color: white;
+  padding: 5px;
+}
+
+#Second div h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.slieshow_container {
+    overflow: hidden; /* Hides the images outside the box */
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    width: calc(250px * 10); /* Example: Image width * total images (including clones) */
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7)); } /* Stop exactly where the clones start */
+}
+
+.wrapper img {
+    width: 375px; /* Adjust this number to the size you actually want */
+    height: auto;
+    flex-shrink: 0; /* Prevents the images from squishing */
+    object-fit: cover;
+    margin-right: 10px; /* Keeps them looking sharp if they have different ratios */
+    border: 10px #700905 solid;
+    border-radius: 20px;
+  }
+
+  .reviews_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.btn-review {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 50px; /* Rounded pill shape */
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Instagram Gradient */
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2397 75%, #bc1888 100%);
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+  }
+
+  /* Facebook Blue */
+  .btn-facebook {
+      background-color: #1877F2;
+      box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+  }
+
+  /* Hover Effects */
+  .btn-review:hover {
+      transform: translateY(-3px); /* Lifts button up slightly */
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      filter: brightness(1.1);
+  }
+
+  .btn-review:active {
+      transform: translateY(0);
+  }
 
 .pfp {
   position: absolute;
@@ -1076,6 +1175,45 @@ footer p {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 100px;
+    height: 180vh;
+  }
+
+  .reviews_buttons {
+        flex-direction: column; /* Stacks them vertically */
+        align-items: center;    /* Centers the stack */
+    }
+
+    .btn-review {
+        width: 90%; /* Makes buttons fill most of the screen width */
+        max-width: 350px; /* Prevents them from getting too wide on tablets */
+    }
+
+  /* Platform Colors (Keep these as they were) */
+  .btn-instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2397, #bc1888);
+  }
+
+  .btn-facebook {
+      background-color: #1877F2;
+  }
+
+  .reviews_header {
+    font-size: 30px;
+    line-height: 1.3em;
+    text-align: left;
+  }
+
+  .Second_headings {
+    margin-top: 0;
+  }
+
+  #Second div h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  margin-top: 30px;
+  text-align: left;
+  font-style: italic;
+  font-weight: 400;
   }
 
   .section-head {
@@ -1083,6 +1221,9 @@ footer p {
     transform: translateY(0%);
   }
 
+  .wrapper img {
+    width: 300px;
+  }
   .Feedback_Container {
     margin: 0;
     padding: 0;
