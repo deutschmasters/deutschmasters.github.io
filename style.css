@@ -587,7 +587,7 @@ nav.mobile-nav a {
 .wrapper {
     display: flex;
     width: calc(250px * 10); /* Example: Image width * total images (including clones) */
-    animation: scroll 40s linear infinite;
+    animation: scroll 37s linear infinite;
 }
 
 @keyframes scroll {
